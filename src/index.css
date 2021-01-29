@@ -39,13 +39,33 @@ body {
 .quoteBox .quote {
   color: var(--current-color);
   margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .quoteBox .author {
   color: var(--current-color);
-  font-weight: lighter;
-  font-size: 1.4rem;
+  font-weight: 500;
   text-align: right;
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.quoteBox .fa-quote-left {
+  position: relative;
+  top: 34px;
+  color: var(--current-color);
+  font-size: 32px;
+}
+
+.quoteBox .fa-quote-right {
+  position: relative;
+  bottom: 23px;
+  float: right;
+  color: var(--current-color);
+  font-size: 32px;
 }
 
 .quoteBox .btns {
@@ -53,19 +73,23 @@ body {
   height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .quoteBox .btn {
   background-color: var(--current-color);
   color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 0 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+  font-size: 24px;
   text-decoration: none;
+  margin-top: 16px;
+  padding: 8px 10px;
+  border: none;
   cursor: pointer;
   outline: none;
+}
+
+.quoteBox .tweet {
+  background: transparent;
+  color: var(--current-color);
 }
