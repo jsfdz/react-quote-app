@@ -18,6 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+blockquote {
+  margin: 0;
+}
+
 .App {
   background-color: var(--current-color);
   min-width: 100vw;
@@ -31,8 +35,8 @@ body {
 
 .quoteBox {
   background-color: #fff;
-  padding: 30px;
-  width: 70%;
+  padding: 20px;
+  width: 90%;
   max-width: 700px;
   border-radius: 5px;
 }
@@ -40,10 +44,10 @@ body {
 .quoteBox .quote {
   color: var(--current-color);
   margin-bottom: 40px;
-  font-size: 40px;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
   margin: 0 auto;
-  width: 80%;
+  width: 81%;
 }
 
 .quoteBox .author {
@@ -51,22 +55,23 @@ body {
   font-weight: 500;
   text-align: right;
   margin: 20px 0 10px 0;
-  font-size: 20px;
+  font-size: 14px;
+}
+
+.quoteBox .fa-quote-left,
+.quoteBox .fa-quote-right {
+  position: relative;
+  color: var(--current-color);
+  font-size: 18px;
 }
 
 .quoteBox .fa-quote-left {
-  position: relative;
-  top: 34px;
-  color: var(--current-color);
-  font-size: 32px;
+  top: 15px;
 }
 
 .quoteBox .fa-quote-right {
-  position: relative;
-  bottom: 23px;
+  bottom: 15px;
   float: right;
-  color: var(--current-color);
-  font-size: 32px;
 }
 
 .quoteBox .btns {
@@ -81,7 +86,7 @@ body {
 .quoteBox .btn {
   background-color: var(--current-color);
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
   text-decoration: none;
   margin-top: 16px;
   padding: 8px 10px;
@@ -93,4 +98,79 @@ body {
 .quoteBox .tweet {
   background: transparent;
   color: var(--current-color);
+  font-size: 24px;
+}
+
+@media (min-width: 576px) {
+  .quoteBox .quote {
+    font-size: 24px;
+  }
+
+  .quoteBox .author {
+    font-size: 18px;
+  }
+
+  .quoteBox .fa-quote-left,
+  .quoteBox .fa-quote-right {
+    font-size: 26px;
+  }
+
+  .quoteBox .fa-quote-left {
+    top: 20px;
+  }
+
+  .quoteBox .fa-quote-right {
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quoteBox {
+    padding: 35px;
+  }
+
+  .quoteBox .quote {
+    font-size: 26px;
+  }
+
+  .quoteBox .author {
+    font-size: 20px;
+  }
+
+  .quoteBox .fa-quote-left,
+  .quoteBox .fa-quote-right {
+    font-size: 28px;
+  }
+
+  .quoteBox .fa-quote-left {
+    top: 25px;
+  }
+
+  .quoteBox .fa-quote-right {
+    bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quoteBox .quote {
+    font-size: 28px;
+    width: 85%;
+  }
+
+  .quoteBox .author {
+    font-size: 24px;
+  }
+
+  .quoteBox .fa-quote-left,
+  .quoteBox .fa-quote-right {
+    font-size: 30px;
+  }
+
+  .quoteBox .fa-quote-left {
+    top: 28px;
+  }
+
+  .quoteBox .fa-quote-right {
+    bottom: 28px;
+  }
 }
