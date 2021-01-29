@@ -15,7 +15,10 @@ function App() {
     [color, setColor] = useState(getRandomColor),
 
     handleClick = () => {
-      setQuote(QUOTE_LIST[QUOTE_RANDOM])
+      const
+        NEW_QUOTE_RANDOM = getRandomNumber(QUOTES_INDEX)
+
+      setQuote(QUOTE_LIST[NEW_QUOTE_RANDOM])
       setColor(getRandomColor())
     }
 
